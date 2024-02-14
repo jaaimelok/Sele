@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="10">
+
+    <test verbose="2" preserve-order="true" name="Personal">
+        <classes>
+            <class name="ru.stqa.selenium.TestNG.Day1">
+                <methods>
+                    <include name="Demo"/>
+            </methods>
+            </class>
+            <class name="ru.stqa.selenium.TestNG.Day2">
+            <methods>
+                <include name="Demo"/>
+                <include name="prequiste"/>
+            </methods>
+            </class>
+            <class name="ru.stqa.selenium.TestNG.Day3">
+            <methods>
+                <include name="Webllogin"/>
+                <include name="Mobilelogin"/>
+                <include name="Apillogin"/>
+                <include name="Beforemethod"/>
+                <include name="aftermethod"/>
+                <include name="beforeclass"/>
+
+            </methods>
+        </class>
+            <class name="ru.stqa.selenium.TestNG.Day4">
+            <methods>
+                <include name="WeblloginHome"/>
+                <include name="MobileloginHome"/>
+                <include name="Apilloginhome"/>
+                <include name="afersuite"/>
+                <include name="aftersuite"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+
+    <test name = "Caar Loan">
+        <classes>
+            <class name="ru.stqa.selenium.TestNG.Day3">
+                <methods>
+                    <exclude name="Mobile.*">
+
+                    </exclude>
+                </methods>
+
+
+
+
+
+            </class>
+            <class name="ru.stqa.selenium.TestNG.Depends">
+
+            </class>
+        </classes>
+
+
+    </test>
+</suite>

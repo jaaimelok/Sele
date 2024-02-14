@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="URL" value="www.googl.ecom"/>
+    <listeners>
+        <listener class-name="ru.stqa.selenium.TestNG.Listeners"> </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.stqa.selenium.TestNG.Day1"/>
+            <class name="ru.stqa.selenium.TestNG.Day2"/>
+            <class name="ru.stqa.selenium.TestNG.Day3"/>
+            <class name="ru.stqa.selenium.TestNG.Day4"/>
+            <class name="ru.stqa.selenium.TestNG.Groups"/>
+
+
+
+
+
+        </classes>
+
+
+
+
+    </test>
+    <test name="parametors">
+
+        <parameter name="URL" value="www.googl.ecom"/>
+        <parameter name="password" value="www.googl.ecom"/>
+        <classes>
+            <class name="ru.stqa.selenium.TestNG.Day1">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="ItLISTENERS">
+        <classes>
+            <class name="ru.stqa.selenium.TestNG.Day1">
+
+            </class>
+        </classes>
+    </test>
+
+
+
+
+
+
+
+
+
+
+</suite>
+
