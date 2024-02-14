@@ -20,7 +20,7 @@ public class Submitordertest extends BaseTest {
 
 
             String productName = "ZARA COAT 3";
-            Landingpage landingpage = launchApplication();
+
             Productcataloge productcataloge = landingpage.loginAplication("jaimecbescuela@hotmail.com", "Secretariojaime99*");
 
 
@@ -37,7 +37,7 @@ public class Submitordertest extends BaseTest {
             String confirmmessage = confirmationPage.verifyconfirmationmessage();
 
             Assert.assertTrue(confirmmessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-            driver.close();
+
 
 
         }
